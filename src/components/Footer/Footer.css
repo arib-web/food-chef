@@ -21,6 +21,7 @@ ul,li{
 }
 .footer-bottom .icon-bottom li .pin{
     color: #BB081D;
+    background: #fff;
     border-radius: 50%;
     width: 32px;
     height: 32px;
@@ -32,7 +33,6 @@ ul,li{
     height: 32px;
 }
 .footer-bottom {
-    background: #242424;
+    background: url(../../assets/images/footer_bg.jpg);
     padding: 15px 0px; 
-    margin-top: 50px;
 }

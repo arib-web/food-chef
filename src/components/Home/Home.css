@@ -1,0 +1,29 @@
+.banner-bg{
+    background: url(../../assets/images/home_banner.jpg);
+    background-size: cover;
+    min-height: 800px;
+}
+.banner-bg .intro-text {
+    margin-top: 195px;
+}
+.banner-bg .intro-text span {
+    font-size: 45px;
+    color: #cf7500;
+    display: inherit;
+    margin: 0px 0 5px;
+    font-family: 'Great Vibes', cursive;
+}
+.banner-bg .intro-text h2 {
+    font-size: 70px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 36px; 
+}
+.banner-bg .intro-text p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+    opacity: 0.8;
+}

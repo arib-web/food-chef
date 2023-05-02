@@ -1,0 +1,25 @@
+.header{
+    background: url(../../assets/images/footer_bg.jpg);
+}
+.active{
+    color: #cf7500;
+    list-style: none;
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.default{
+    color: #fff;
+    list-style: none;
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.navbar .nav-item .nav-link {
+    padding: 0px 21px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}

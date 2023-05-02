@@ -5,7 +5,7 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <div className='bg-secondary footer-bottom'>
+        <div className='bg-secondary footer-bottom '>
             <Container>
                     <Row>
                         <Col lg={6}>

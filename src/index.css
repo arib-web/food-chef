@@ -1,1 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600;700&display=swap');
 
+
+/* font-family: 'Great Vibes', cursive; */
+/* font-family: 'Poppins', sans-serif; */
+.swin-btn {
+    line-height: 55px;
+    padding: 0px 45px;
+    height: 55px;
+    background: #cf7500;
+    border: 1px solid #cf7500;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.swin-btn:hover {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    color: #333;
+}

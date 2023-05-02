@@ -1,23 +1,29 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import logo from '../../assets/images/logo.png';
+import './Header.css'
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar className='header'>
             <Container >
-                <Navbar.Brand href="#">Food Chef</Navbar.Brand>
+                <Navbar.Brand href="#"><img src={logo} alt="" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
-                        className="me-auto my-2 my-lg-0"
+                        className="mx-auto my-2 my-lg-0"
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="#action1">Home</Nav.Link>
-                        <Nav.Link href="#action2">Link</Nav.Link>
+                        <NavLink to="/"
+                            className={({ isActive }) => (isActive ? 'active' : 'default')}>Home</NavLink>
+
+                        <NavLink to="/blog"
+                            className={({ isActive }) => (isActive ? 'active' : 'default')}>Blog</NavLink>
                     </Nav>
                     <div>
-                        <Button variant="info">Login</Button>
+                        <Button  className='swin-btn'>Login</Button>
                     </div>
                 </Navbar.Collapse>
             </Container>
