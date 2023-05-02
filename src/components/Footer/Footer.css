@@ -1,0 +1,38 @@
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-bottom .icon-bottom li{
+    margin-right: 10px;
+}
+.footer-bottom .icon-bottom li .fb{
+    color: #3b5998;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+.footer-bottom .icon-bottom li .tw{
+    color: #1da1f2;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+.footer-bottom .icon-bottom li .pin{
+    color: #BB081D;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+.footer-bottom .icon-bottom li .youtube{
+    color: #FF0000;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+.footer-bottom {
+    background: #242424;
+    padding: 15px 0px; 
+    margin-top: 50px;
+}
