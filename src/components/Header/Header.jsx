@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import logo from '../../assets/images/logo.png';
 import './Header.css'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { AuthContex } from '../Provider/AuthProvider';
 
 const Header = () => {
+    const { user, logOut } = useContext(AuthContex);
+
+    const handleLogout = () => {
+        logOut()
+            .then()
+            .catch(error => console.log(error))
+    }
     return (
         <Navbar className='header'>
             <Container >
@@ -22,8 +30,12 @@ const Header = () => {
                         <NavLink to="/blog"
                             className={({ isActive }) => (isActive ? 'active' : 'default')}>Blog</NavLink>
                     </Nav>
-                    <div>
-                        <Button  className='swin-btn'>Login</Button>
+                    <div className='d-flex align-items-center justify-content-center'>
+                        {
+                            user && <img className='user-img me-2' src={user.photoURL} alt="" /> 
+                        }
+                        {user?<Link ><Button onClick={handleLogout} className='swin-btn'>LogOut</Button></Link>:
+                        <Link to='/login'><Button className='swin-btn'>Login</Button></Link>}
                     </div>
                 </Navbar.Collapse>
             </Container>

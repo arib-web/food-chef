@@ -23,3 +23,8 @@
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
 }
+.user-img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}

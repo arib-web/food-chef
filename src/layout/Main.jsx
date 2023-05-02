@@ -3,6 +3,7 @@ import Header from '../components/Header/Header';
 import { Outlet } from 'react-router-dom';
 import Footer from '../components/Footer/Footer';
 import './Main.css'
+import toast, { Toaster } from 'react-hot-toast';
 
 const Main = () => {
     return (
@@ -10,6 +11,7 @@ const Main = () => {
             <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>
+            <Toaster />
         </div>
     );
 };

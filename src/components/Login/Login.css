@@ -1,0 +1,12 @@
+.login-bg{
+    background: url(../../assets/images/home_banner.jpg);
+    background-size: cover;
+    /* min-height: 700px; */
+    padding: 150px 0px;
+}
+.login-form{
+    background-color: #fff;
+    width: 50%;
+    margin: 0px auto;
+    padding: 80px 40px;
+}
