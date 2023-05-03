@@ -12,7 +12,7 @@ const Footer = () => {
                             <p className='text-white'><FaCopyright className='text-white'></FaCopyright> Copyright 2023 ,Arib Mahmud</p>
                         </Col>
                         <Col lg={6}>
-                            <ul class="icon-bottom d-flex justify-content-end">
+                            <ul className="icon-bottom d-flex justify-content-end">
                                 <li ><i><FaFacebook className='fb'></FaFacebook></i></li>
                                 <li ><i><FaTwitter className='tw'></FaTwitter></i></li>
                                 <li ><i><FaPinterest className='pin'></FaPinterest> </i></li>

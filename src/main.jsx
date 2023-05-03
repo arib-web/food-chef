@@ -1,7 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -13,6 +12,7 @@ import Blog from './components/Blog/Blog.jsx';
 import Login from './components/Login/Login.jsx';
 import Register from './components/Register/Register.jsx';
 import AuthProvider from './components/Provider/AuthProvider.jsx';
+import Chefs from './components/Chefs/Chefs.jsx';
 
 
 const router = createBrowserRouter([
@@ -29,6 +29,12 @@ const router = createBrowserRouter([
         element: <Blog></Blog>
       },
       {
+        path: 'chefs',
+        element: <Chefs></Chefs>,
+        // loader: ()=> fetch("https://api.itbook.store/1.0/new")
+        loader: ()=> fetch("../public/data.json")
+      },
+      {
         path: 'login',
         element: <Login></Login>
        },
@@ -40,16 +46,6 @@ const router = createBrowserRouter([
     ]
   },
 ]);
-
-
-
-
-
-
-
-
-
-
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

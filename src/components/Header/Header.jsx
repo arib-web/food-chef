@@ -29,13 +29,15 @@ const Header = () => {
 
                         <NavLink to="/blog"
                             className={({ isActive }) => (isActive ? 'active' : 'default')}>Blog</NavLink>
+                        <NavLink to="/chefs"
+                            className={({ isActive }) => (isActive ? 'active' : 'default')}>chefs</NavLink>
                     </Nav>
                     <div className='d-flex align-items-center justify-content-center'>
                         {
                             user && <img className='user-img me-2' src={user.photoURL} alt="" /> 
                         }
                         {user?<Link ><Button onClick={handleLogout} className='swin-btn'>LogOut</Button></Link>:
-                        <Link to='/login'><Button className='swin-btn'>Login</Button></Link>}
+                        <Link to='/register'><Button className='swin-btn'>Login</Button></Link>}
                     </div>
                 </Navbar.Collapse>
             </Container>
