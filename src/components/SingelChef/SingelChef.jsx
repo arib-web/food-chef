@@ -1,21 +1,25 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
+import { FaThumbsUp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const SingelChef = ({ chef }) => {
     console.log(chef);
     const { chef_name, chef_picture, id, likes, num_of_recipes, years_of_experience } = chef
     return (
         <div className='col-md-4'>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={chef_picture} />
-                <Card.Body>
-                    <Card.Title>{chef_name}</Card.Title>
-                    <Card.Text>
-                        Experience: {years_of_experience} years
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
+            <div className="card">
+                <img src={chef_picture} className="card-img-top" a />
+                <div className="card-body">
+                    <h5 className="card-title">{chef_name}</h5>
+                    <p>Experience: {years_of_experience} years</p>
+                    <p>Number of recepieces: {num_of_recipes}</p>
+                    <div className='d-flex align-items-center justify-content-between'>
+                        <p ><span className='fw-bold'> Likes:- </span>{likes}</p>
+                        <Link to={`../chefs/${chef.id}`} className="btn swin-btn">View Recepie</Link>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
