@@ -23,7 +23,7 @@ const ChefDetails = () => {
                                 <p className="card-text">Experiences: {years_of_experience} Years</p>
                                 <div className='d-flex align-items-center justify-content-between'>
                                     <p ><span className='fw-bold'> Likes:- </span>{likes}</p>
-                                    <a href="#" class="btn swin-btn">Favourite</a>
+                                    
                                 </div>
                             </div>
                         </div>

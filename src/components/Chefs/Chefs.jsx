@@ -8,7 +8,8 @@ const Chefs = () => {
     // console.log(chefs);
     return (
             <div className='container'>
-                <div className='row g-4'>
+                <h2 className='fw-bold mt-5 mb-5 text-center'>Our Chefs</h2>
+                <div className='row g-4 mb-5'>
                         {chefs.map(chef =>
                             <SingelChef
                                 key={chef.id}

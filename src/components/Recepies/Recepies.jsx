@@ -7,7 +7,7 @@ const Recepies = ({ recepie }) => {
     console.log(recepie);
     return (
         <div className='col-md-4'>
-            <div className="card">
+            <div className="card" style={{height:"100%"}}>
                 <img className="card-img-top" />
                 <div className="card-body">
                     <h3 className="card-title text-center">{recipe_name}</h3>
@@ -21,13 +21,14 @@ const Recepies = ({ recepie }) => {
                     </ul>
                     <p className='mt-3'><span className='fw-bold'>Cooking Method:</span>{cooking_method}</p>
                     <div className='d-flex align-items-center justify-content-between'>
-                        <Rating
+                        <Rating className='text-warning'
                             readonly
                             placeholderRating={rating}
                             emptySymbol={<FaRegStar></FaRegStar>}
                             placeholderSymbol={<FaStar></FaStar>}
                             fullSymbol={<FaStar></FaStar>}
                         />
+                        <a  class="btn swin-btn">Favourite</a>
                     </div>
                 </div>
             </div>
