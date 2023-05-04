@@ -3,12 +3,12 @@ import { FaRegStar, FaStar } from 'react-icons/fa';
 import Rating from 'react-rating';
 
 const Recepies = ({ recepie }) => {
-    const { recipe_name, ingredients, cooking_method, rating } = recepie;
+    const { recipe_name, ingredients, cooking_method, rating,img } = recepie;
     console.log(recepie);
     return (
         <div className='col-md-4'>
             <div className="card" style={{height:"100%"}}>
-                <img className="card-img-top" />
+                <img className="card-img-top" src={img}/>
                 <div className="card-body">
                     <h3 className="card-title text-center">{recipe_name}</h3>
                     <h5 className='fw-bold'>Ingredients:-</h5>

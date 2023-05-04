@@ -10,13 +10,13 @@ const ChefDetails = () => {
         <div className='container'>
             <div className='mt-5'>
                 <h2 className='text-center mb-5 fw-bold'>Chef All Details</h2>
-                <div className="row mb-5">
+                <div className="row mb-5 g-4">
                     <div className="col-md-6">
                         <div className='card'><img src={chef_picture} alt="" /></div>
                     </div>
                     <div className="col-md-6">
                         <div className="card " >
-                            <div className="card-body" style={{ height: "420px" }}>
+                            <div className="card-body" style={{ height: "100%" }}>
                                 <h3 className="card-title text-center mt-2">{chef_name}</h3>
                                 <h5 className='mt-4'>{description}</h5>
                                 <p className="card-text mt-4">Total Recepies: {num_of_recipes} item</p>
@@ -32,7 +32,7 @@ const ChefDetails = () => {
             </div>
             <div>
                 <h2 className='mt-4 mb-5 text-center fw-bold'>Chef Three Recepie</h2>
-                <div className='row mb-5'>
+                <div className='row mb-5 g-4'>
                     {chefsdata.recipes.map(recepie =>
                         <Recepies
                             recepie={recepie}
