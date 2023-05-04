@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <div className='banner-bg'>
                 <Container>
-                    <Row>
+                    <Row className='pb-5'>
                         <Col lg={12}>
                             <div className="intro-text text-center text-white">
                                 <div>
