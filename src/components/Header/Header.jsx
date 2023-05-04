@@ -14,14 +14,14 @@ const Header = () => {
             .catch(error => console.log(error))
     }
     return (
-        <Navbar className='header'>
+        <Navbar className='header' bg="dark" expand="lg">
             <Container >
                 <Navbar.Brand href="#"><img src={logo} alt="" /></Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Toggle aria-controls="navbarScroll" style={{ background: '#fff'}} />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
                         className="mx-auto my-2 my-lg-0"
-                        style={{ maxHeight: '100px' }}
+                        style={{ maxHeight: '100px'}}
                         navbarScroll
                     >
                         <NavLink to="/"

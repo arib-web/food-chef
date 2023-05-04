@@ -2,7 +2,7 @@
    "chefs":[
     {
       "chef_picture": "https://img.freepik.com/free-photo/happy-young-cook-uniform-holding-salad_171337-5342.jpg?size=626&ext=jpg&ga=GA1.1.1896889893.1665354643&semt=sph",
-      "id": 1,
+      "id": "1",
       "chef_name": "Sofia Martinez",
       "years_of_experience": 15,
       "num_of_recipes": 80,
@@ -48,7 +48,7 @@
     },
     {
       "chef_picture": "https://img.freepik.com/free-photo/happy-young-cook-uniform-showing-thumbs-up_171337-5330.jpg?size=626&ext=jpg&ga=GA1.1.1896889893.1665354643&semt=sph",
-      "id": 2,
+      "id": "2",
       "chef_name": "Jane Smith",
       "years_of_experience": 5,
       "num_of_recipes": 20,
@@ -94,7 +94,7 @@
     },
     {
       "chef_picture": "https://img.freepik.com/free-photo/confident-young-handsome-cook-chef-uniform-standing-with-closed-posture-isolated-orange-wall_141793-101136.jpg?size=626&ext=jpg&ga=GA1.1.1896889893.1665354643&semt=sph",
-      "id": 3,
+      "id": "3",
       "chef_name": "Bob Johnson",
       "years_of_experience": 15,
       "num_of_recipes": 80,
@@ -141,7 +141,7 @@
     {
       "chef_picture": "https://img.freepik.com/free-photo/female-chef-holding-wooden-spoon-whisk-rolling-pin-white-uniform-looking-cheery_176474-12639.jpg?size=626&ext=jpg&ga=GA1.1.1896889893.1665354643&semt=sph",
       "chef_name": "Sarah Lee",
-      "id": 4,
+      "id": "4",
       "years_of_experience": 8,
       "num_of_recipes": 30,
       "likes": 3000,
@@ -186,7 +186,7 @@
     },
     {
       "chef_picture": "https://img.freepik.com/free-photo/portrait-smiling-chef-uniform_329181-675.jpg?size=626&ext=jpg&ga=GA1.1.1896889893.1665354643&semt=sph",
-      "id": 5,
+      "id": "5",
       "chef_name": "David Kim",
       "years_of_experience": 12,
       "num_of_recipes": 60,
@@ -232,7 +232,7 @@
     },
     {
       "chef_picture": "https://img.freepik.com/free-photo/female-chef-standing-with-crossed-arms-white-uniform-looking-happy_176474-13476.jpg?size=626&ext=jpg&ga=GA1.1.1896889893.1665354643&semt=sph",
-      "id": 6,
+      "id": "6",
       "chef_name": "Maria Rodriguez",
       "years_of_experience": 6,
       "num_of_recipes": 25,

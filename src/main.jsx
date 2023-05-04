@@ -13,6 +13,7 @@ import Login from './components/Login/Login.jsx';
 import Register from './components/Register/Register.jsx';
 import AuthProvider from './components/Provider/AuthProvider.jsx';
 import Chefs from './components/Chefs/Chefs.jsx';
+import ChefDetails from './components/ChefDetails/ChefDetails.jsx';
 
 
 const router = createBrowserRouter([
@@ -25,14 +26,19 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path: 'blog',
+        path: '/blog',
         element: <Blog></Blog>
       },
       {
-        path: 'chefs',
+        path: '/chefs',
         element: <Chefs></Chefs>,
-        // loader: ()=> fetch("https://api.itbook.store/1.0/new")
-        loader: ()=> fetch("../public/data.json")
+        loader: ()=> fetch("http://localhost:5000/chefs")
+      },
+      {
+        path: 'chef/:id',
+        element: <ChefDetails></ChefDetails>,
+        loader: ({params})=>fetch(`http://localhost:5000/chef/${params.id}`)
+
       },
       {
         path: 'login',
