@@ -4,6 +4,7 @@ import { Button, Container, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContex } from '../Provider/AuthProvider';
 import toast from 'react-hot-toast';
+import './Register.css'
 
 const Register = () => {
     const { createUser, updateUser } = useContext(AuthContex)
@@ -25,11 +26,11 @@ const Register = () => {
             return;
         }
         else if (form.value) {
-             setError("Field value required");
+            setError("Field value required");
             return;
         }
 
-        createUser(email, password,photo)
+        createUser(email, password, photo)
             .then(result => {
                 const createdUser = result.user;
                 console.log(createdUser)
@@ -49,10 +50,11 @@ const Register = () => {
     }
 
     return (
-        <div className='login'>
-            <Container className='w-25 mx-auto'>
-                <h3>Please Register</h3>
-                <Form onSubmit={handleCreateUser}>
+
+        <Container className=''>
+            <div className='card mt-5 mb-5'>
+                <h3 className='text-center'>Please Register</h3>
+                <Form onSubmit={handleCreateUser} className='register-form'>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Name</Form.Label>
                         <Form.Control type="text" name='name' placeholder="Your Name" required />
@@ -89,8 +91,8 @@ const Register = () => {
                         {error && <p className='text-center text-danger mb-2'>{error}</p>}
                     </Form.Text>
                 </Form>
-            </Container>
-        </div>
+            </div>
+        </Container>
     );
 };
 
