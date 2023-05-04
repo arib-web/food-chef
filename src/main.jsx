@@ -15,7 +15,8 @@ import AuthProvider from './components/Provider/AuthProvider.jsx';
 import Chefs from './components/Chefs/Chefs.jsx';
 import ChefDetails from './components/ChefDetails/ChefDetails.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
-import LoadingSpinner from './components/LoadiSpinner/LoadingSpinner.jsx';
+import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner.jsx';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute.jsx';
 
 
 const router = createBrowserRouter([
@@ -35,12 +36,12 @@ const router = createBrowserRouter([
       {
         path: '/chefs',
         element: <Chefs></Chefs>,
-        loader: ()=> fetch("http://localhost:5000/chefs")
+        loader: ()=> fetch("https://food-chef-server-arib-web.vercel.app/chefs")
       },
       {
         path: 'chef/:id',
-        element: <ChefDetails></ChefDetails>,
-        loader: ({params})=>fetch(`http://localhost:5000/chef/${params.id}`)
+        element: <PrivateRoute><ChefDetails></ChefDetails></PrivateRoute>,
+        loader: ({params})=>fetch(`https://food-chef-server-arib-web.vercel.app/chef/${params.id}`)
 
       },
       {

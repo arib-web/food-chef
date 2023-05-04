@@ -1,11 +1,10 @@
 import React from 'react';
 import { useLoaderData, useNavigation } from 'react-router-dom';
 import SingelChef from '../SingelChef/SingelChef';
-import LoadingSpinner from '../LoadiSpinner/LoadingSpinner';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 
 const Chefs = () => {
     const navigation = useNavigation()
-    console.log(navigation.state);
     if (navigation.state === 'loading') {
         return <LoadingSpinner />
     }

@@ -11,18 +11,19 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
 
-    const createUser = (email, password) => {
+    const createUser = (email, password, photo) => {
         setLoading(true)
-        return createUserWithEmailAndPassword(auth, email, password)
+        return createUserWithEmailAndPassword(auth, email, password,photo)
     }
     const loginUser = (email, password) => {
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
-    const updateUser = (name) => {
+    const updateUser = (name,photo) => {
         setLoading(true)
         updateProfile(auth.currentUser, {
             displayName: name,
+            photoURL: photo,
         })
     }
     const logOut = () => {

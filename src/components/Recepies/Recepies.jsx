@@ -28,7 +28,7 @@ const Recepies = ({ recepie }) => {
                             placeholderSymbol={<FaStar></FaStar>}
                             fullSymbol={<FaStar></FaStar>}
                         />
-                        <a  class="btn swin-btn">Favourite</a>
+                        <a  className="btn swin-btn">Favourite</a>
                     </div>
                 </div>
             </div>

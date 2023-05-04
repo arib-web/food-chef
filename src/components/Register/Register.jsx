@@ -17,10 +17,19 @@ const Register = () => {
         const name = form.name.value;
         const email = form.email.value;
         const password = form.password.value;
-        const photo =    form.photo.value;
-        setError(null)
+        const photo = form.photo.value;
+        setError(null);
 
-        createUser(email, password)
+        if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)) {
+            setError("password not valid need 8 char ");
+            return;
+        }
+        else if (form.value) {
+             setError("Field value required");
+            return;
+        }
+
+        createUser(email, password,photo)
             .then(result => {
                 const createdUser = result.user;
                 console.log(createdUser)

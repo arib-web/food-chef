@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLoaderData, useNavigation, useParams } from 'react-router-dom';
 import Recepies from '../Recepies/Recepies';
-import LoadingSpinner from '../LoadiSpinner/LoadingSpinner';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 
 const ChefDetails = () => {
     const navigation = useNavigation()
@@ -39,6 +39,7 @@ const ChefDetails = () => {
                 <div className='row mb-5 g-4'>
                     {chefsdata.recipes.map(recepie =>
                         <Recepies
+                        key={recepie.recepie_id}
                             recepie={recepie}
                         />
                     )}

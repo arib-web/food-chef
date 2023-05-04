@@ -1,6 +1,12 @@
 import React from 'react';
+import { useNavigation } from 'react-router-dom';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 
 const Blog = () => {
+    const navigation = useNavigation()
+    if (navigation.state === 'loading') {
+        return <LoadingSpinner />
+    };
     return (
         <div className='container'>
             <h2 className='fw-bold text-center my-5' >Blog Page</h2>
