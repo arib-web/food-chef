@@ -32,7 +32,7 @@ const ChefDetails = () => {
             </div>
             <div>
                 <h2 className='mt-4 mb-5 text-center fw-bold'>Chef Three Recepie</h2>
-                <div className='row'>
+                <div className='row mb-5'>
                     {chefsdata.recipes.map(recepie =>
                         <Recepies
                             recepie={recepie}
